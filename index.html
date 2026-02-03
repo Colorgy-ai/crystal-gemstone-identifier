@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colorgy - AI Crystal Identifier</title>
+
+    <!-- STYLES -->
+    <style>
+      /* Background & Fonts */
+      body {
+        background-color: #0b0d12;
+        color: #f5f6fa;
+        font-family: "Helvetica", sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      /* Headings */
+      h1 {
+        color: #f5f6fa;
+        font-size: 2.5em;
+        letter-spacing: 2px;
+        margin-top: 40px;
+      }
+
+      h2 {
+        color: #f5f6fa;
+        font-size: 1.8em;
+        margin: 30px 0 10px;
+      }
+
+      /* Secondary Text */
+      p,
+      .subtext {
+        color: #9ca3af;
+        font-size: 1em;
+        margin: 10px 0 20px;
+      }
+
+      /* Buttons */
+      button,
+      .cta {
+        background-color: #e06c9f;
+        color: #0b0d12;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1em;
+        margin: 10px 0;
+        transition: background-color 0.3s;
+      }
+
+      button:hover,
+      .cta:hover {
+        background-color: #f2a1c4;
+      }
+
+      /* Feedback Input */
+      input[type="text"] {
+        padding: 6px;
+        margin-top: 4px;
+        width: 80%;
+        border-radius: 4px;
+        border: 1px solid #9ca3af;
+        font-size: 1em;
+      }
+
+      /* Sections */
+      section {
+        max-width: 600px;
+        margin: 0 auto 50px auto;
+        padding: 0 20px;
+      }
+
+      /* Footer */
+      footer {
+        color: #9ca3af;
+        font-size: 0.9em;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HERO -->
+    <section id="hero">
+      <h1>Scan a crystal.<br />Discover its meaning.</h1>
+      <p class="subtext">
+        AI-powered crystal identification with energetic insight — instant,
+        intuitive, and beautifully simple.
+      </p>
+      <button class="cta" id="scanButton">Scan Now</button>
+      <button class="cta" id="proButton" disabled>
+        Unlock full insights with Pro
+      </button>
+      <p class="subtext">Early access • No spam • Free launch perks</p>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="howItWorks">
+      <h2>How Colorgy works</h2>
+
+      <h3>Step 1 – Scan</h3>
+      <p class="subtext">Use your camera to scan any crystal or gemstone.</p>
+
+      <h3>Step 2 – Identify</h3>
+      <p class="subtext">
+        Colorgy’s AI recognizes the crystal and its unique characteristics.
+      </p>
+
+      <h3>Step 3 – Understand</h3>
+      <p class="subtext">
+        Explore meaning, energy, and symbolism — clearly explained.
+      </p>
+
+      <p style="color: #e06c9f; margin-top: 10px">
+        Be the first to try Colorgy.
+      </p>
+    </section>
+
+    <!-- FEEDBACK / EARLY ACCESS -->
+    <section id="feedback">
+      <div id="feedbackHook">
+        You’re on Early Access – Feedback is welcome!
+        <br />
+        <input type="text" placeholder="Enter feedback..." />
+      </div>
+    </section>
+
+    <!-- LAUNCH TEASER -->
+    <section id="launchTeaser">
+      <p class="subtext">Launching soon on iOS & Android</p>
+      <p class="subtext">
+        Early access members get exclusive features and perks.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      Built for clarity, calm & curiosity.<br />
+      © Colorgy · Privacy-first · No tracking hype
+    </footer>
+
+    <!-- OPTIONAL: Minimal JS for Scan Button -->
+    <script>
+      const scanButton = document.getElementById("scanButton");
+      scanButton.addEventListener("click", () => {
+        alert("Scan functionality coming soon for Early Access!");
+      });
+    </script>
+  </body>
+</html>
+
