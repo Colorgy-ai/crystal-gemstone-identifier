@@ -95,37 +95,36 @@
       intuitive, and beautifully simple.
     </p>
 
-    <!-- SCAN BUTTON -->
-    <button class="cta" id="scanButton" style="margin-bottom:15px;">Scan Now</button>
-
-    <!-- PRO BUTTON -->
-    <button class="cta" id="proButton"
-  onclick="window.open('STRIPE_LINK_MONTHLY_YEARLY', '_blank')">
-  🔓 Unlock full insights with Pro
+  <!-- SCAN BUTTON (EINMAL) -->
+<button class="cta" id="scanButton" style="margin-bottom:16px;">
+  Scan Now
 </button>
 
-<p class="subtext" style="font-size:0.8em; opacity:0.6;">
-  One-time payment · No subscription
-</p>
-    <p class="subtext" style="font-size:0.85em; opacity:0.7;">
-  One-time payment • Early access pricing • Future updates included
-</p>
-    <!-- EARLY ACCESS BUTTON -->
-    <div style="text-align:center; margin-top:20px;">
-      <a href="https://bit.ly/colorgyapp" target="_blank"
-         style="background-color:#E06C9F;
-                color:#0B0D12;
-                padding:12px 24px;
-                border-radius:8px;
-                text-decoration:none;
-                font-weight:bold;
-                display:inline-block;
-                font-size:1.1em;">
-        🚀 Start Early Access
-      </a>
-</div>
-    </section>
+<!-- PRO SUBSCRIPTION (MAIN CTA – EINMAL) -->
+<button class="cta primary" id="proButton"
+  onclick="window.open('https://buy.stripe.com/DEIN_MONTHLY_YEARLY_LINK', '_blank')">
+  Continue with Pro
+</button>
 
+<p class="subtext" style="font-size:0.9em; opacity:0.75;">
+  7-day free access · Monthly CHF 6.99 · Yearly CHF 39.99
+</p>
+
+<!-- LIFETIME (OHNE ID) -->
+<button class="cta secondary"
+  onclick="window.open('https://buy.stripe.com/DEIN_LIFETIME_LINK', '_blank')">
+  💎 Lifetime access
+</button>
+
+<p class="subtext small">
+  One-time payment · No subscription · Power users only
+</p>
+
+<!-- ZWEITER PRO BUTTON (OHNE ID) -->
+<button class="cta"
+  onclick="window.open('https://buy.stripe.com/DEIN_MONTHLY_YEARLY_LINK', '_blank')">
+  Continue with Pro
+</button>
     <!-- HOW IT WORKS -->
     <section id="howItWorks">
       <h2>How Colorgy works</h2>
@@ -178,6 +177,15 @@
         alert("Scan functionality coming soon for Early Access!");
       });
     </script>
+   <script>
+  function unlockPro() {
+    localStorage.setItem("colorgy_pro", "true");
+  }
+
+  function isProUser() {
+    return localStorage.getItem("colorgy_pro") === "true";
+  }
+</script>
   </body>
 </html>
 
